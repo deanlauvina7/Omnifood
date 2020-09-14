@@ -180,7 +180,16 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* FEATURES */
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
 /* MEALS */
+.section-meals {
+  padding: 0;
+}
+
 .meals-showcase {
   list-style: none;
   width: 100%;
@@ -195,9 +204,19 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background: black;
 }
 
 .meal-photo img {
+  opacity: 0.7;
   width: 100%;
   height: auto;
+  transform: scale(1.15);
+  transition: ease-in-out 0.5s, opacity 0.5s;
+}
+
+.meals-showcase img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
