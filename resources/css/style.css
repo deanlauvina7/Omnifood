@@ -238,6 +238,19 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* MOBILE NAV */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.reorder-three-outline {
+  font-size: 200%;
+  color: white;
+}
+
 /* STICKY NAV */
 .sticky {
   position: fixed;
@@ -671,6 +684,42 @@ footer p {
     display: none;
   }
 
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .main-nav {
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 5px 0;
+    font-size: 100%;
+  }
+
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+  }
+
+  .sticky .reorder-three-outline {
+    font-size: 200%;
+    color: black;
+  }
+
   h1 {
     font-size: 180%;
   }
@@ -709,8 +758,6 @@ footer p {
     padding-right: 3%;
     margin-top: 30px;
   }
-
-
 }
 
 /*Small phones: from 0 to 480px  */
@@ -722,4 +769,22 @@ footer p {
   .contact-form {
     width: 100%;
   }
+}
+
+/* ANIMATIONS */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-4 {
+  animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
 }
