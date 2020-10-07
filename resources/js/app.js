@@ -70,11 +70,11 @@ $(document).ready(function () {
 
     nav.slideToggle(200);
     if (icon.hasClass('reorder-three-outline')) {
-      icon.addElement('<ion-icon name="close-outline"></ion-icon>');
+      icon.addElement('close-outline');
       icon.removeClass('reorder-three-outline');
     } else {
       icon.addClass('reorder-three-outline');
-      icon.removeClass('<ion-icon name="close-outline"></ion-icon>');
+      icon.removeClass('close-outline');
     }
   });
 });
